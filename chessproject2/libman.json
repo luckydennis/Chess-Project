@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "chess.js@0.10.2",
+      "destination": "wwwroot/js/chess.js/"
+    },
+    {
+      "library": "json3@3.3.2",
+      "destination": "wwwroot/lib/json3/"
+    },
+    {
+      "library": "jquery@1.10.1",
+      "destination": "wwwroot/js/jquery/"
+    }
+  ]
+}
