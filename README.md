@@ -5,7 +5,7 @@
 
 
 ## About
-I started off thinking of creating a chess game in the console application using C#. This will allow players to play against each other or play against a computer for practice. From this Chess App game I wanted to learn more about game development and web development.
+I wanted to create a chess game in the console application using C# and then a web application. This will allow players to play against each other or play against a computer for practice. From this Chess App game I wanted to learn more about game development and web development.
 
 
 ## Requirements
