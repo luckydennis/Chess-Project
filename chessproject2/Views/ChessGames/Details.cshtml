@@ -1,0 +1,61 @@
+﻿@model chessproject2.Models.ChessGame
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChessGame</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fen)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gameDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.gameDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+    </dl>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Play Chess!</title>
+    <base href="https://chessproject2.azurewebsites.net/">
+    <link rel="stylesheet" href="~/css/chessboard-0.3.0.css">
+</head>
+
+<body>
+    <div id="board" style="width: 400px"></div>
+
+    <script src="~/lib/json3/json3.min.js"></script>
+    <script src="~/js/jquery/jquery.min.js"></script>
+    <script src="~/js/chessboard-0.3.0.js"></script>
+    <script>
+        var ruyLopez =  "@Html.Raw(Model.Fen)";
+        var board = ChessBoard('board', ruyLopez);
+    </script>
+
+</body>
+</html>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

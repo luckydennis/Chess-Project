@@ -22,9 +22,9 @@ namespace chessproject2.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Play()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Click and Drag to play";
 
             return View();
         }
