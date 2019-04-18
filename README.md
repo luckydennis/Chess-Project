@@ -17,13 +17,13 @@ A PowerPoint of my requirements and flow.
 I started off thinking of creating a chess game in the console application using C#. I noticed that it was taking too much time to create a chess engine so I was able to find couple C# chess libraries(ProgramFOX/Chess.Net and rudzen/ChessLib). However, I was not able to use these libraries becasue my main goal was to create a web application and I was running into problems using C# code. After doing more searching I was able to find a javascript chess library. The engine I use is [chess.js](https://github.com/jhlywa/chess.js/) and the user interface is [chessboard.js](https://chessboardjs.com/). Currently, I was able to embed the game into my website, I am thinking of adding more features.
 
 ## Currently Working On
-*Be able to auto save the game to the database rather than manually inputing the game information.
-*Be able to load games using the Fen string.
-*Store PGN data to see previous moves.
-*Add some CSS to the website.
-*Add actual user log in so I can use the user name(player).
+* Be able to auto save the game to the database rather than manually inputing the game information.
+* Be able to load games using the Fen string.
+* Store PGN data to see previous moves.
+* Add some CSS to the website.
+* Add actual user log in so I can use the user name(player).
 
 ## Future Implementation
-*Player vs Computer
-*Learn to play chess
-*Clock
+* Player vs Computer
+* Learn to play chess
+* Clock
