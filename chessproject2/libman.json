@@ -13,6 +13,11 @@
     {
       "library": "jquery@1.10.1",
       "destination": "wwwroot/js/jquery/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@aspnet/signalr@1.0.3",
+      "destination": "wwwroot/lib/@aspnet/signalr/"
     }
   ]
 }

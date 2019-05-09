@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using chessproject2.Models;
+using chattest;
 
 namespace chessproject2
 {
@@ -38,6 +39,7 @@ namespace chessproject2
 
             services.AddDbContext<chessproject2Context>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("chessproject2Context")));
+            services.AddSignalR().AddAzureSignalR("Endpoint = https://chesssignalr.service.signalr.net;AccessKey=vXIJIGqs/63Dtb6/9vnASCrQBbteqHpnXRwapcNq5BE=;Version=1.0;");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +64,11 @@ namespace chessproject2
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+            app.UseAzureSignalR(routes =>
+            {
+                routes.MapHub<Chat>("/chat");
             });
         }
     }
