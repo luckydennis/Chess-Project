@@ -116,5 +116,32 @@
 
     </script>
     <img src="~/images/wP.png" id="69d8-90f7-fa73-bf56-9f93-995e-5690-60ef" alt="" class="piece-417db" data-piece="wP" style="height: 49px; width: 49px; position: absolute; left: 255px; top: 380px; display: none;">
+
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                <input type="text" id="userInput" />
+                <br />
+                Message...<input type="text" id="messageInput" />
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
 </body>
+
 </html>
