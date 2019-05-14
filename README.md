@@ -10,7 +10,7 @@ I wanted to create a chess game in the console application using C# and then a w
 
 ## Requirements Test 
 | ID   | Description              | Test Method   | Test Procedure                                     | Current Status | TimeStamp|
-| ---- |:------------------------:| -------------:| :--------------------------------------------------:| --------------:| --------:|
+| ---- |:------------------------:| -------------:| :--------------------------------------------------| --------------:| --------:|
 | 1.0  | Check Homepage           | Demonstration | The home button and link should display correctly. | Passing        | 5/2/2019 |
 | 2.0  | Check Play button        | Demonstration | Click Play and check if chessboard plays correctly.| Passing        | 5/2/2019 |
 | 3.0  | Check database button    | Demonstration | Click database and check if chessboard plays correctly.| Passing        | 5/2/2019 |
