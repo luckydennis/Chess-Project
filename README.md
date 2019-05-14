@@ -1,7 +1,7 @@
-# Chess App Project
+# Chess Web App Project
 
 
-[Link to my Chess App](http://chessproject2.azurewebsites.net)
+[Link to my Chess Web App](http://chessproject2.azurewebsites.net)
 
 
 ## About
@@ -9,8 +9,11 @@ I wanted to create a chess game in the console application using C# and then a w
 
 
 ## Requirements
-A PowerPoint of my requirements and flow.
-[PowerPoint Slides](https://1drv.ms/p/s!Ar5gQ3pcMFyZZ6l-U0fnj0_dZog)
+| ID            | Description   | Test Method  | Test Procedure | Current Status | TimeStamp|
+| ------------- |:-------------:| ------------:| --------------:| --------------:| --------:|
+| col 3 is      | right-aligned | $1600        |
+| col 2 is      | centered      |   $12        |
+| zebra stripes | are neat      |    $1        |
 
 
 ## In-Process Review
